@@ -1,0 +1,22 @@
+{
+  "name": "prototype-clone",
+  "version": "1.0.1",
+  "description": "Like Object.assign(), but all simple objects will be deep-copied into derived objects.",
+  "main": "prototype-clone.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "clone",
+    "deep-copy",
+    "prototype"
+  ],
+  "author": "fwg",
+  "license": "ISC",
+  "dependencies": {
+    "is-simple-object": "^1.0.5"
+  },
+  "devDependencies": {
+    "prototype-stringify": "^1.0.2"
+  }
+}
