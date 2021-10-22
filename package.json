@@ -1,6 +1,6 @@
 {
   "name": "prototype-clone",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Like Object.assign(), but all simple objects will be deep-copied into derived objects.",
   "main": "prototype-clone.js",
   "scripts": {
@@ -8,6 +8,7 @@
   },
   "keywords": [
     "clone",
+    "assign",
     "deep-copy",
     "prototype"
   ],

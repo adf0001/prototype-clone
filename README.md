@@ -6,6 +6,17 @@ Like Object.assign(), but all simple objects will be deep-copied into derived ob
 npm install prototype-clone
 ```
 
+# API
+```javascript
+
+.clone = function (source1 /*, source2 ... */);     //module default
+
+.assign = function (target, source1 /*, source2 ... */);
+.copySingle = function (target, source /*, refMap */);
+.createRef = function (o, refMap);
+
+```
+
 # Usage
 ```javascript
 var prototype_clone = require("prototype-clone");

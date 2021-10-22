@@ -15,6 +15,7 @@ module.exports = {
 
 		assert(aa.b === 1 && aa.c.d === 2 && aa.e.f === 3);		//value from prototype
 
+		//console.log(aa);
 		assert(JSON.stringify(aa) === '{"c":{},"e":{}}');	//clone as void
 		assert(prototype_stringify(aa) === '{"b":1,"c":{"d":2},"e":{"f":3}}');
 
@@ -69,6 +70,17 @@ module.exports = {
 		done(false);
 	},
 
+	".assign()": function (done) {
+		var a = { c: 2, d: { e: 3 } };
+
+		var aa = prototype_clone.assign({b:1},a);
+
+		//console.log(aa);
+		assert(JSON.stringify(aa) === '{"b":1,"c":2,"d":{}}');	//clone simple objects as void
+		assert(prototype_stringify(aa) === '{"b":1,"c":2,"d":{"e":3}}');
+
+		done(false);
+	},
 
 };
 
