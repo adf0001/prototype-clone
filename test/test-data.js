@@ -2,7 +2,7 @@
 assert = require("assert");
 prototype_clone = require("../prototype-clone.js");
 
-prototype_stringify = require("prototype-stringify");
+prototype_stringify = require("prototype-stringify");   //tool for debug
 
 module.exports = {
 
